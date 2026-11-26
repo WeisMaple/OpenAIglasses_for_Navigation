@@ -47,7 +47,7 @@ except Exception:
 # ---- DashScope ASR 基础 ----
 from dashscope import audio as dash_audio  # 若未安装，会在原项目里抛错提示
 
-API_KEY = os.getenv("DASHSCOPE_API_KEY", "sk-a9440db694924559ae4ebdc2023d2b9a")
+API_KEY = os.getenv("DASHSCOPE_API_KEY")
 if not API_KEY:
     raise RuntimeError("未设置 DASHSCOPE_API_KEY")
 
